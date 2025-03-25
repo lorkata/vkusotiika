@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресторант Поръчка</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Хедър с навигация -->
+<header>
+    <div class="container">
+        <h1>Ресторант "Вкусно"</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Начало</a></li>
+                <li><a href="#">Меню</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Меню -->
+<section id="menu">
+    <div class="container">
+        <h2>Нашето меню</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="image4.jpg" alt="Пица Маргарита">
+                <h3>Пица Маргарита</h3>
+                <p>Вкусна пица с доматен сос, моцарела и босилек.</p>
+                <span>10.00 лв</span>
+            </div>
+            <div class="menu-item">
+                <img src="image1.jpg" alt="Паста Карбонара">
+                <h3>Паста Карбонара</h3>
+                <p>Паста с кремообразен сос, бекон и пармезан.</p>
+                <span>12.00 лв</span>
+            </div>
+            <div class="menu-item">
+                <img src="image2.jpg" alt="Чийзбургер">
+                <h3>Чийзбургер</h3>
+                <p>Сочен бургер с месо, сирене,свежи зеленчуци и картофки.</p>
+                <span>8.00 лв</span>
+            </div>
+            <div class="menu-item">
+                <img src="image3.jpg" alt="Цезар салата">
+                <h3>Цезар салата</h3>
+                <p>Свежа салата с римски маруля, крутони и пармезан.</p>
+                <span>6.00 лв</span>
+            </div>
+            <div class="menu-item">
+                <img src="image5.jpg" alt="Брускети с домати и босилек">
+                <h3>Брускети с домати и босилек</h3>
+                <p>Хрупкав хляб, чесън и зехтин.</p>
+                <span>7.80 лв</span>
+            </div>
+            <div class="menu-item">
+                <img src="image6.jpg" alt="Пица Пеперони">
+                <h3>Пица Пеперони</h3>
+                <p>Пикантен салам, моцарела, доматен сос</p>
+                <span>14.00 лв</span>
+            </div>
+            <div class="menu-item">
+                <img src="image7.jpg" alt="Пица Капричоза">
+                <h3>Пица Капричоза</h3>
+                <p>Пица с доматен сос, моцарела, гъби, шунка и маслини.</p>
+                <span>16.90 лв</span>
+            </div>
+             <div class="menu-item">
+                <img src="image8.jpg" alt="Тирамису">
+                <h3>Тирамису</h3>
+                <p>Италиански десерт с крем от маскарпоне, кафе и какао.</p>
+                <span>6.00 лв</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Форма за поръчка -->
+<section id="order-form">
+    <div class="container">
+        <h2>Направи поръчка</h2>
+        <form id="orderForm" action="#" method="post">
+            <label for="name">Име</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Имейл</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="food">Избери ястие</label>
+            <select id="food" name="food" required>
+                <option value="pizza">Пица Маргарита</option>
+                <option value="pasta">Паста Карбонара</option>
+                <option value="burger">Чийзбургер</option>
+                <option value="salad">Цезар салата</option>
+                <option value="salad">Брускети с домати и босилек</option>
+                <option value="salad">Пица Пеперони</option>
+                <option value="salad">Пица Капричоза</option>
+                <option value="salad">Тирамису</option>
+            </select>            
+
+            <label for="quantity">Количество</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <button type="submit" id="orderButton">Поръчай сега</button>
+        </form>
+    </div>
+</section>
+<div class="contact-section">
+    <h2>Контакти</h2>
+    <p><strong>Адрес:</strong> ул.Марица33, Пловдив</p>
+    <p><strong>Телефон:</strong> +359 87794 7240</p>
+    <p><strong>Email:</strong> vkusotiq@gmail.com</p>
+    <p><strong>Работно време:</strong> Всеки ден от 10:00 до 22:00 ч.</p>
+</div>
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Ресторант "Вкусно". Всички права запазени.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
